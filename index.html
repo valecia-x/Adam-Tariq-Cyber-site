@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADAM TARIQ | CYBER EXPERT</title>
+    <title>دليل الأمن السيبراني | آدم طارق</title>
     <style>
-        body { 
-            background-color: #000; 
-            color: #0f0; 
-            font-family: 'Courier New', monospace; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            height: 100vh; 
-            margin: 0; 
-        }
-        .terminal { 
-            border: 2px solid #0f0; 
-            padding: 40px; 
-            box-shadow: 0 0 20px #0f0; 
-            background: rgba(0, 20, 0, 0.9); 
-            text-align: left;
-            max-width: 90%;
-        }
-        h1 { 
-            font-size: 2.2em; 
-            text-shadow: 0 0 10px #0f0; 
-            margin-bottom: 20px; 
-            text-align: center; 
-        }
-        .info-line { 
-            color: white; 
-            font-size: 1.2em; 
-            margin: 15px 0; 
-        }
-        .green-text { color: #0f0; }
-        .cursor { animation: blink 1s infinite; }
-        @keyframes blink { 50% { opacity: 0; } }
+        :root { --neon-green: #00ff41; --dark-bg: #050505; }
+        body { background-color: var(--dark-bg); color: #fff; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000'); background-size: cover; padding: 80px 20px; text-align: center; border-bottom: 3px solid var(--neon-green); }
+        h1 { color: var(--neon-green); font-size: 3em; margin: 0; text-shadow: 0 0 15px var(--neon-green); }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        section { background: #111; margin: 25px 0; padding: 30px; border-radius: 15px; border-right: 6px solid var(--neon-green); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h2 { color: var(--neon-green); border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .highlight { color: var(--neon-green); font-weight: bold; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 15px 0; padding-right: 25px; position: relative; }
+        li::before { content: "⚡"; position: absolute; right: 0; color: var(--neon-green); }
+        footer { text-align: center; padding: 50px; color: #555; border-top: 1px solid #222; }
     </style>
 </head>
 <body>
-    <div class="terminal">
-        <h1>> ADAM TARIQ ACTIVE</h1>
-        <div class="info-line"><span class="green-text">[LOCATION]</span> Larache / Bruxelles [cite: 2026-01-22]</div>
-        <div class="info-line"><span class="green-text">[EXPERT]</span> Cyber Security & Code [cite: 2026-01-22]</div>
-        <div class="info-line"><span class="green-text">[SYSTEM]</span> Optiplex 7020 [cite: 2026-01-22]</div>
-        <div class="info-line"><span class="green-text">[STATUS]</span> Building the future...<span class="cursor">_</span></div>
+    <div class="hero">
+        <h1>موسوعة الأمن السيبراني</h1>
+        <p>بإشراف الخبير: <span class="highlight">آدم طارق (Adam Tariq)</span></p>
     </div>
+
+    <div class="container">
+        <section>
+            <h2>🛡️ ما هو الأمن السيبراني؟</h2>
+            <p>هو خط الدفاع الأول في العالم الرقمي. يتمثل في حماية الأنظمة، الشبكات، والبرامج من الهجمات الرقمية التي تهدف للوصول إلى بياناتك الحساسة أو تخريبها. بالنسبة لي، <span class="highlight">آدم طارق</span>، أرى أن الأمن ليس مجرد أدوات، بل هو ثقافة ووعي دائم.</p>
+        </section>
+
+        <section>
+            <h2>🔐 كيفية حماية أنفسنا من الاختراق</h2>
+            <ul>
+                <li><span class="highlight">تفعيل المصادقة الثنائية (2FA):</span> لا تكتفِ بكلمة السر؛ اجعل هاتفك مفتاحاً ثانياً.</li>
+                <li><span class="highlight">تحديث الأنظمة فوراً:</span> الثغرات الأمنية هي أبواب الهكرز، والتحديث يغلقها.</li>
+                <li><span class="highlight">الحذر من الهندسة الاجتماعية:</span> لا تفتح روابط مجهولة حتى لو كانت من أشخاص تعرفهم.</li>
+                <li><span class="highlight">استخدام مدير كلمات السر:</span> لا تكرر كلمة السر في أكثر من موقع.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🚀 أساسيات تعلم المجال (خارطة الطريق)</h2>
+            <p>إذا كنت تريد البدء في هذا العالم المثير، إليك الأساسيات التي أتبعها:</p>
+            <ul>
+                <li><span class="highlight">الشبكات (Networking):</span> يجب أن تفهم كيف "تتحدث" الحواسيب مع بعضها.</li>
+                <li><span class="highlight">أنظمة Linux:</span> هو النظام المفضل لخبراء الأمن والاختراق.</li>
+                <li><span class="highlight">البرمجة:</span> تعلم Python أو JavaScript لتفهم كيف تُبنى الثغرات وكيف تُعالج.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📍 من أين تبدأ؟</h2>
+            <p>ابدأ بدراسة شهادة <span class="highlight">CompTIA Security+</span> فهي تضعك على الطريق الصحيح. ثم انتقل لمختبرات التطبيق العملي مثل <span class="highlight">TryHackMe</span>. تذكر دائماً: الهكر الأخلاقي يبني ولا يهدم.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>تم تصميم هذا الموقع بواسطة آدم طارق - خبير تقني طموح</p>
+        <p>العرائش | بروكسل - 2026</p>
+    </footer>
 </body>
 </html>
